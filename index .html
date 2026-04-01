@@ -12,17 +12,26 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
   <style>
-    /* Custom Styling needed outside utility classes */
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #F9F6F1; /* Warm Sand */
-      color: #0A1128; /* Deep Navy */
+      background-color: #F9F6F1; 
+      color: #0A1128; 
     }
     h1, h2, h3, .serif {
       font-family: 'Playfair Display', serif;
     }
     .custom-input {
-      @apply w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-[#D1495B] focus:ring-1 focus:ring-[#D1495B] outline-none transition;
+      width: 100%;
+      background-color: white;
+      border: 1px solid #e5e7eb;
+      padding: 1rem 1.5rem;
+      border-radius: 0.75rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .custom-input:focus {
+      border-color: #D1495B;
+      box-shadow: 0 0 0 1px #D1495B;
     }
     html {
       scroll-behavior: smooth;
@@ -239,7 +248,7 @@
         </div>
       </div>
 
-      <form action="https://formspree.io/f/Odiliprecious515@gmail.com" method="POST" class="bg-white/5 p-12 rounded-3xl border border-white/10 space-y-6">
+      <form action="#" method="POST" class="bg-white/5 p-12 rounded-3xl border border-white/10 space-y-6">
         <div class="grid grid-cols-2 gap-4">
           <input type="text" name="name" placeholder="Full Name" class="custom-input !bg-transparent !border-white/10 text-white placeholder:text-gray-500" required>
           <input type="email" name="email" placeholder="Email Address" class="custom-input !bg-transparent !border-white/10 text-white placeholder:text-gray-500" required>
@@ -274,4 +283,5 @@
   </a>
 
 </body>
-</html>
+    </html>
+            
